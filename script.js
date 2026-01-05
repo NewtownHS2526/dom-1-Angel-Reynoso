@@ -28,14 +28,18 @@
 console.log("script running");
 
 // TODO: Fix this bug - should select #apple, not #banana!
-const appleButton = document.querySelector("#banana");
+const appleButton = document.querySelector("#apple");
 
 console.log(appleButton);
 
 // TODO: Rename this function to something more generic like "addItem"
-const addApple = () => {
+const addItem = () => {
   alert("apple button under construction");
 };
 
 // TODO: Add event listeners for all three buttons
-appleButton.addEventListener("click", addApple);
+appleButton.addEventListener("click", addItem);
+const bananaButton = document.querySelector("#banana");
+bananaButton.addEventListener("click", addApple);
+const mangoButton = document.querySelector("#mango");
+mangoButton.addEventListener("click", addApple);  
